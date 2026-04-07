@@ -4,382 +4,168 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Simona Ilie — Operations Lead</title>
-<meta name="description" content="Simona Ilie — Operations Lead · Agency Builder & Fixer · Systems Architect. 20+ years across digital agency management, enterprise brand strategy and operational transformation.">
+<meta name="description" content="Simona Ilie (Romascanu) — Operations Lead · Agency Builder & Fixer · Systems Architect">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
 :root {
-  --black: #0a0a0a;
-  --near-black: #111111;
-  --dark: #1a1a1a;
-  --dark-mid: #222222;
-  --mid: #333333;
-  --mid-light: #555555;
-  --gray: #888888;
-  --light-gray: #b0b0b0;
-  --silver: #d0d0d0;
-  --off-white: #e8e8e8;
-  --white: #ffffff;
-  --accent: #c0c0c0;
-
+  --black: #0a0a0a; --near-black: #111111; --dark: #1a1a1a; --mid: #333333;
+  --gray: #888888; --light-gray: #b0b0b0; --silver: #d0d0d0; --white: #ffffff;
+  --off-white: #f5f5f5; --warm-gray: #e8e8e8; --med-gray: #666666;
   --font-display: 'Cormorant Garamond', Georgia, serif;
   --font-body: 'Manrope', 'Helvetica Neue', sans-serif;
 }
-
 html { scroll-behavior: smooth; font-size: 16px; }
-
-body {
-  font-family: var(--font-body);
-  background: var(--black);
-  color: var(--white);
-  line-height: 1.7;
-  font-weight: 300;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
+body { font-family: var(--font-body); background: var(--black); color: var(--white); line-height: 1.7; font-weight: 300; -webkit-font-smoothing: antialiased; }
 ::selection { background: var(--mid); color: var(--white); }
 
-/* NAV */
-nav {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-  background: rgba(10,10,10,0.92);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(255,255,255,0.06);
-  transition: transform 0.3s ease;
-}
-nav .nav-inner {
-  max-width: 1200px; margin: 0 auto;
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 1rem 2rem;
-}
-nav .logo {
-  font-family: var(--font-display);
-  font-size: 1.1rem; font-weight: 400;
-  letter-spacing: 0.15em; text-transform: uppercase;
-  color: var(--white);
-  text-decoration: none;
-}
+/* === NAV === */
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(10,10,10,0.92); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,0.06); }
+nav .nav-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 1rem 2rem; }
+nav .logo { font-family: var(--font-display); font-size: 1.1rem; font-weight: 400; letter-spacing: 0.15em; text-transform: uppercase; color: var(--white); text-decoration: none; }
 nav ul { list-style: none; display: flex; gap: 2rem; }
-nav a {
-  color: var(--light-gray); text-decoration: none;
-  font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase;
-  font-weight: 500; transition: color 0.3s;
-}
+nav a { color: var(--light-gray); text-decoration: none; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 500; transition: color 0.3s; }
 nav a:hover { color: var(--white); }
-
 .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; }
-.nav-toggle span { display: block; width: 20px; height: 1px; background: var(--white); margin: 5px 0; transition: 0.3s; }
+.nav-toggle span { display: block; width: 20px; height: 1px; background: var(--white); margin: 5px 0; }
 
-/* HERO */
-.hero {
-  min-height: 100vh;
-  display: flex; flex-direction: column;
-  justify-content: center; align-items: center;
-  text-align: center;
-  padding: 6rem 2rem 4rem;
-  position: relative;
-  background: linear-gradient(180deg, var(--black) 0%, var(--near-black) 50%, var(--dark) 100%);
-}
-.hero::before {
-  content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
-  background: radial-gradient(ellipse at 50% 30%, rgba(255,255,255,0.02) 0%, transparent 70%);
-  pointer-events: none;
-}
-.hero-label {
-  font-size: 0.7rem; letter-spacing: 0.3em; text-transform: uppercase;
-  color: var(--gray); margin-bottom: 2rem; font-weight: 500;
-}
-.hero h1 {
-  font-family: var(--font-display);
-  font-size: clamp(2.8rem, 7vw, 5.5rem);
-  font-weight: 300; line-height: 1.1;
-  color: var(--white);
-  margin-bottom: 1.5rem;
-  letter-spacing: 0.02em;
-}
-.hero-subtitle {
-  font-size: clamp(0.85rem, 1.5vw, 1rem);
-  color: var(--light-gray);
-  letter-spacing: 0.08em;
-  max-width: 600px;
-  margin-bottom: 3rem;
-  font-weight: 300;
-}
-.hero-quote {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: clamp(1rem, 2vw, 1.3rem);
-  color: var(--silver);
-  max-width: 500px;
-  line-height: 1.6;
-  margin-bottom: 3rem;
-}
-.hero-stats {
-  display: flex; gap: 3rem; flex-wrap: wrap; justify-content: center;
-  margin-top: 1rem;
-}
-.hero-stat { text-align: center; }
-.hero-stat .number {
-  font-family: var(--font-display);
-  font-size: 2.2rem; font-weight: 300;
-  color: var(--white);
-  display: block;
-}
-.hero-stat .label {
-  font-size: 0.65rem; text-transform: uppercase;
-  letter-spacing: 0.15em; color: var(--gray); font-weight: 500;
-  margin-top: 0.3rem; display: block;
-}
-.scroll-indicator {
-  position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%);
-  font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase;
-  color: var(--gray); text-decoration: none;
-  animation: pulse 2s ease-in-out infinite;
-}
-@keyframes pulse { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; } }
-
-/* SECTIONS */
+/* === DARK SECTIONS (default) === */
 section { padding: 5rem 2rem; }
 .container { max-width: 960px; margin: 0 auto; }
+.section-label { font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gray); font-weight: 600; margin-bottom: 1rem; }
 
-.section-label {
-  font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase;
-  color: var(--gray); font-weight: 600; margin-bottom: 1rem;
-}
-.section-title {
-  font-family: var(--font-display);
-  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
-  font-weight: 300; line-height: 1.3;
-  color: var(--white);
-  margin-bottom: 2rem;
-}
+/* === LIGHT SECTIONS === */
+.light { background: var(--white); color: var(--black); }
+.light .section-label { color: var(--gray); }
+.light .section-title { color: var(--black); }
+.light .profile-text p { color: var(--mid); }
+.light .profile-text strong { color: var(--black); }
+.light .profile-quote { color: var(--med-gray); border-left-color: var(--silver); }
+.light .contact-bar { border-top-color: rgba(0,0,0,0.08); }
+.light .contact-bar a, .light .contact-bar span { color: var(--med-gray); }
+.light .contact-bar a:hover { color: var(--black); }
+.light .comp-group h3 { color: var(--black); border-bottom-color: var(--silver); }
+.light .comp-group li { color: var(--med-gray); border-bottom-color: rgba(0,0,0,0.05); }
+.light .exp-date { color: var(--black); }
+.light .exp-company { color: var(--med-gray); }
+.light .exp-location { color: var(--gray); }
+.light .exp-team { color: var(--gray); }
+.light .exp-content h3 { color: var(--black); }
+.light .exp-content .exp-desc { color: var(--med-gray); }
+.light .exp-content .exp-note { color: var(--gray); }
+.light .exp-content h4 { color: var(--gray); border-bottom-color: rgba(0,0,0,0.06); }
+.light .exp-content li { color: var(--mid); border-left-color: rgba(0,0,0,0.08); }
+.light .exp-content li:hover { border-left-color: var(--mid); }
+.light .exp-content li strong { color: var(--black); }
+.light .earlier-toggle { border-color: var(--silver); color: var(--med-gray); }
+.light .earlier-toggle:hover { border-color: var(--black); color: var(--black); }
+.light .kpi-group h3 { color: var(--black); border-bottom-color: var(--silver); }
+.light .kpi-item .kpi-val { color: var(--black); }
+.light .kpi-item .kpi-desc { color: var(--gray); }
+.light .project-card { border-color: rgba(0,0,0,0.08); }
+.light .project-card:hover { border-color: rgba(0,0,0,0.2); background: rgba(0,0,0,0.02); }
+.light .project-card h3 { color: var(--black); }
+.light .project-card p { color: var(--med-gray); }
+.light .edu-col h3 { color: var(--black); border-bottom-color: var(--silver); }
+.light .edu-item h4 { color: var(--black); }
+.light .edu-item p { color: var(--gray); }
+.light .edu-item li { color: var(--med-gray); }
+.light .tools-col h3 { color: var(--black); border-bottom-color: var(--silver); }
+.light .tools-col li { color: var(--med-gray); }
+.light .tools-col .tool-cat { color: var(--black); }
 
-/* PROFILE */
-.profile { background: var(--near-black); }
+/* === HERO === */
+.hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 6rem 2rem 4rem; position: relative; background: linear-gradient(180deg, var(--black) 0%, var(--near-black) 50%, var(--dark) 100%); }
+.hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 30%, rgba(255,255,255,0.02) 0%, transparent 70%); pointer-events: none; }
+.hero-label { font-size: 0.7rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gray); margin-bottom: 2rem; font-weight: 500; }
+.hero h1 { font-family: var(--font-display); font-size: clamp(2.8rem, 7vw, 5.5rem); font-weight: 300; line-height: 1.1; color: var(--white); margin-bottom: 1.5rem; letter-spacing: 0.02em; }
+.hero-subtitle { font-size: clamp(0.85rem, 1.5vw, 1rem); color: var(--light-gray); letter-spacing: 0.08em; max-width: 700px; margin-bottom: 0.5rem; font-weight: 300; }
+.hero-subtitle2 { font-size: clamp(0.78rem, 1.2vw, 0.88rem); color: var(--gray); max-width: 700px; margin-bottom: 3rem; font-weight: 300; }
+.hero-quote { font-family: var(--font-display); font-style: italic; font-size: clamp(1rem, 2vw, 1.3rem); color: var(--silver); max-width: 500px; line-height: 1.6; margin-bottom: 3rem; }
+.hero-stats { display: flex; gap: 3rem; flex-wrap: wrap; justify-content: center; margin-top: 1rem; }
+.hero-stat { text-align: center; }
+.hero-stat .number { font-family: var(--font-display); font-size: 2.2rem; font-weight: 300; color: var(--white); display: block; }
+.hero-stat .label { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--gray); font-weight: 500; margin-top: 0.3rem; display: block; }
+.scroll-indicator { position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray); text-decoration: none; animation: pulse 2s ease-in-out infinite; }
+@keyframes pulse { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; } }
+
+/* === PROFILE === */
+.section-title { font-family: var(--font-display); font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 300; line-height: 1.3; color: var(--white); margin-bottom: 2rem; }
 .profile-text { max-width: 800px; }
-.profile-text p {
-  color: var(--silver);
-  font-size: 0.95rem; margin-bottom: 1.5rem;
-}
+.profile-text p { color: var(--silver); font-size: 0.95rem; margin-bottom: 1.5rem; }
 .profile-text strong { color: var(--white); font-weight: 600; }
-.profile-quote {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: 1.15rem;
-  color: var(--light-gray);
-  border-left: 1px solid var(--mid);
-  padding-left: 1.5rem;
-  margin: 2.5rem 0;
-  line-height: 1.7;
-}
-.contact-bar {
-  display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 2rem;
-  padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.06);
-}
-.contact-bar a, .contact-bar span {
-  color: var(--light-gray); text-decoration: none;
-  font-size: 0.8rem; letter-spacing: 0.03em;
-  transition: color 0.3s;
-}
+.profile-quote { font-family: var(--font-display); font-style: italic; font-size: 1.15rem; color: var(--light-gray); border-left: 1px solid var(--mid); padding-left: 1.5rem; margin: 2.5rem 0; line-height: 1.7; }
+.contact-bar { display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.06); }
+.contact-bar a, .contact-bar span { color: var(--light-gray); text-decoration: none; font-size: 0.8rem; transition: color 0.3s; }
 .contact-bar a:hover { color: var(--white); }
 
-/* COMPETENCIES */
-.competencies { background: var(--black); }
-.comp-grid {
-  display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem;
-  margin-top: 2rem;
-}
-.comp-group h3 {
-  font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase;
-  color: var(--white); font-weight: 600; margin-bottom: 1rem;
-  padding-bottom: 0.5rem; border-bottom: 1px solid var(--mid);
-}
+/* === COMPETENCIES === */
+.comp-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; margin-top: 2rem; }
+.comp-group h3 { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--white); font-weight: 600; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--mid); }
 .comp-group ul { list-style: none; }
-.comp-group li {
-  font-size: 0.8rem; color: var(--light-gray);
-  padding: 0.35rem 0; border-bottom: 1px solid rgba(255,255,255,0.03);
-}
+.comp-group li { font-size: 0.8rem; color: var(--light-gray); padding: 0.35rem 0; border-bottom: 1px solid rgba(255,255,255,0.03); }
 
-/* EXPERIENCE */
-.experience { background: var(--near-black); }
-.exp-entry {
-  display: grid; grid-template-columns: 200px 1fr; gap: 3rem;
-  padding: 3rem 0;
-  border-bottom: 1px solid rgba(255,255,255,0.06);
-}
+/* === EXPERIENCE === */
+.exp-entry { display: grid; grid-template-columns: 200px 1fr; gap: 3rem; padding: 3rem 0; border-bottom: 1px solid rgba(0,0,0,0.06); }
+.light .exp-entry { border-bottom-color: rgba(0,0,0,0.06); }
+.dark-section .exp-entry { border-bottom-color: rgba(255,255,255,0.06); }
 .exp-entry:last-child { border-bottom: none; }
 .exp-meta { position: sticky; top: 5rem; align-self: start; }
-.exp-date {
-  font-family: var(--font-display);
-  font-size: 1rem; color: var(--white); font-weight: 400;
-  margin-bottom: 0.8rem;
-}
-.exp-company {
-  font-size: 0.75rem; color: var(--light-gray);
-  line-height: 1.5; margin-bottom: 0.3rem;
-}
-.exp-location {
-  font-size: 0.7rem; color: var(--gray);
-  letter-spacing: 0.05em;
-}
-.exp-content h3 {
-  font-family: var(--font-display);
-  font-size: 1.5rem; font-weight: 400;
-  color: var(--white); margin-bottom: 0.5rem;
-}
-.exp-content .exp-desc {
-  font-size: 0.85rem; color: var(--light-gray);
-  margin-bottom: 1.5rem; font-style: italic;
-}
-.exp-content h4 {
-  font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase;
-  color: var(--gray); font-weight: 600;
-  margin: 2rem 0 1rem; padding-bottom: 0.4rem;
-  border-bottom: 1px solid rgba(255,255,255,0.04);
-}
+.exp-date { font-family: var(--font-display); font-size: 1rem; color: var(--white); font-weight: 400; margin-bottom: 0.8rem; }
+.exp-company { font-size: 0.75rem; color: var(--light-gray); line-height: 1.5; margin-bottom: 0.3rem; }
+.exp-location { font-size: 0.7rem; color: var(--gray); }
+.exp-content h3 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 400; color: var(--white); margin-bottom: 0.5rem; }
+.exp-content .exp-desc { font-size: 0.85rem; color: var(--light-gray); margin-bottom: 1.5rem; font-style: italic; }
+.exp-content .exp-note { font-size: 0.82rem; color: var(--gray); margin-bottom: 1.5rem; font-style: italic; }
+.exp-content h4 { font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray); font-weight: 600; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid rgba(255,255,255,0.04); }
 .exp-content ul { list-style: none; }
-.exp-content li {
-  font-size: 0.85rem; color: var(--silver);
-  padding: 0.6rem 0;
-  padding-left: 1rem;
-  border-left: 1px solid rgba(255,255,255,0.06);
-  margin-bottom: 0.3rem;
-  transition: border-color 0.3s;
-}
+.exp-content li { font-size: 0.85rem; color: var(--silver); padding: 0.6rem 0 0.6rem 1rem; border-left: 1px solid rgba(255,255,255,0.06); margin-bottom: 0.3rem; transition: border-color 0.3s; }
 .exp-content li:hover { border-left-color: var(--light-gray); }
 .exp-content li strong { color: var(--white); font-weight: 500; }
-.exp-team {
-  font-size: 0.75rem; color: var(--gray);
-  margin-top: 0.3rem; font-style: italic;
-}
-.earlier-toggle {
-  background: none; border: 1px solid var(--mid); color: var(--light-gray);
-  padding: 0.8rem 2rem; cursor: pointer; font-family: var(--font-body);
-  font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase;
-  transition: all 0.3s; margin-top: 2rem; display: inline-block;
-}
+.exp-team { font-size: 0.75rem; color: var(--gray); margin-top: 0.3rem; font-style: italic; }
+.earlier-toggle { background: none; border: 1px solid var(--mid); color: var(--light-gray); padding: 0.8rem 2rem; cursor: pointer; font-family: var(--font-body); font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; transition: all 0.3s; margin-top: 2rem; }
 .earlier-toggle:hover { border-color: var(--white); color: var(--white); }
 .earlier-career { display: none; }
 .earlier-career.show { display: block; }
 
-/* KPIs */
-.kpis { background: var(--dark); }
-.kpi-grid {
-  display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;
-  margin-top: 2rem;
-}
-.kpi-group h3 {
-  font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase;
-  color: var(--white); font-weight: 600;
-  margin-bottom: 1.2rem; padding-bottom: 0.5rem;
-  border-bottom: 1px solid var(--mid);
-}
+/* === KPIs === */
+.kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-top: 2rem; }
+.kpi-group h3 { font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--white); font-weight: 600; margin-bottom: 1.2rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--mid); }
 .kpi-item { margin-bottom: 1.2rem; }
-.kpi-item .kpi-val {
-  font-family: var(--font-display);
-  font-size: 1.1rem; color: var(--white); font-weight: 400;
-}
-.kpi-item .kpi-desc {
-  font-size: 0.75rem; color: var(--gray); margin-top: 0.2rem;
-}
+.kpi-item .kpi-val { font-family: var(--font-display); font-size: 1.1rem; color: var(--white); font-weight: 400; }
+.kpi-item .kpi-desc { font-size: 0.75rem; color: var(--gray); margin-top: 0.2rem; }
 
-/* PROJECTS */
-.projects { background: var(--near-black); }
-.project-grid {
-  display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem;
-  margin-top: 2rem;
-}
-.project-card {
-  padding: 2rem;
-  border: 1px solid rgba(255,255,255,0.06);
-  transition: border-color 0.4s, background 0.4s;
-}
-.project-card:hover {
-  border-color: rgba(255,255,255,0.15);
-  background: rgba(255,255,255,0.02);
-}
-.project-card h3 {
-  font-family: var(--font-display);
-  font-size: 1.2rem; font-weight: 400;
-  color: var(--white); margin-bottom: 0.8rem;
-}
-.project-card p {
-  font-size: 0.8rem; color: var(--light-gray); line-height: 1.7;
-}
+/* === PROJECTS === */
+.project-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-top: 2rem; }
+.project-card { padding: 2rem; border: 1px solid rgba(255,255,255,0.06); transition: border-color 0.4s, background 0.4s; }
+.project-card:hover { border-color: rgba(255,255,255,0.15); background: rgba(255,255,255,0.02); }
+.project-card h3 { font-family: var(--font-display); font-size: 1.2rem; font-weight: 400; color: var(--white); margin-bottom: 0.8rem; }
+.project-card p { font-size: 0.8rem; color: var(--light-gray); line-height: 1.7; }
 
-/* EDUCATION */
-.education { background: var(--black); }
-.edu-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 3rem;
-  margin-top: 2rem;
-}
-.edu-col h3 {
-  font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase;
-  color: var(--white); font-weight: 600;
-  margin-bottom: 1.5rem; padding-bottom: 0.5rem;
-  border-bottom: 1px solid var(--mid);
-}
+/* === EDUCATION === */
+.edu-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3rem; margin-top: 2rem; }
+.edu-col h3 { font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--white); font-weight: 600; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--mid); }
 .edu-item { margin-bottom: 1.5rem; }
-.edu-item h4 {
-  font-size: 0.9rem; color: var(--white); font-weight: 500;
-  margin-bottom: 0.3rem;
-}
-.edu-item p {
-  font-size: 0.78rem; color: var(--gray); line-height: 1.5;
-}
-.edu-item li {
-  font-size: 0.8rem; color: var(--light-gray);
-  padding: 0.3rem 0; list-style: none;
-}
+.edu-item h4 { font-size: 0.9rem; color: var(--white); font-weight: 500; margin-bottom: 0.3rem; }
+.edu-item p { font-size: 0.78rem; color: var(--gray); line-height: 1.5; }
+.edu-item li { font-size: 0.8rem; color: var(--light-gray); padding: 0.3rem 0; list-style: none; }
 
-/* TOOLS */
-.tools { background: var(--near-black); }
-.tools-grid {
-  display: grid; grid-template-columns: repeat(2, 1fr); gap: 3rem;
-  margin-top: 2rem;
-}
-.tools-col h3 {
-  font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase;
-  color: var(--white); font-weight: 600;
-  margin-bottom: 1rem; padding-bottom: 0.5rem;
-  border-bottom: 1px solid var(--mid);
-}
-.tools-col li {
-  list-style: none; font-size: 0.82rem;
-  color: var(--light-gray); padding: 0.4rem 0;
-}
-.tools-col .tool-cat {
-  color: var(--white); font-weight: 500;
-}
+/* === TOOLS === */
+.tools-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 3rem; margin-top: 2rem; }
+.tools-col h3 { font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--white); font-weight: 600; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--mid); }
+.tools-col li { list-style: none; font-size: 0.82rem; color: var(--light-gray); padding: 0.4rem 0; }
+.tools-col .tool-cat { color: var(--white); font-weight: 500; }
 
-/* FOOTER */
-footer {
-  background: var(--black);
-  text-align: center; padding: 4rem 2rem;
-  border-top: 1px solid rgba(255,255,255,0.06);
-}
-footer .footer-quote {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: 1.2rem;
-  color: var(--silver);
-  margin-bottom: 2rem;
-}
-footer .footer-links {
-  display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;
-}
-footer a {
-  color: var(--light-gray); text-decoration: none;
-  font-size: 0.8rem; transition: color 0.3s;
-}
+/* === FOOTER === */
+footer { background: var(--black); text-align: center; padding: 4rem 2rem; border-top: 1px solid rgba(255,255,255,0.06); }
+footer .footer-quote { font-family: var(--font-display); font-style: italic; font-size: 1.2rem; color: var(--silver); margin-bottom: 2rem; }
+footer .footer-links { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
+footer a { color: var(--light-gray); text-decoration: none; font-size: 0.8rem; transition: color 0.3s; }
 footer a:hover { color: var(--white); }
 
-/* RESPONSIVE */
+/* === RESPONSIVE === */
 @media (max-width: 900px) {
   .comp-grid, .kpi-grid { grid-template-columns: repeat(2, 1fr); }
   .edu-grid { grid-template-columns: 1fr; }
@@ -389,12 +175,7 @@ footer a:hover { color: var(--white); }
 }
 @media (max-width: 600px) {
   nav ul { display: none; }
-  nav ul.open {
-    display: flex; flex-direction: column;
-    position: absolute; top: 100%; left: 0; right: 0;
-    background: rgba(10,10,10,0.97);
-    padding: 1rem 2rem 2rem; gap: 1rem;
-  }
+  nav ul.open { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: rgba(10,10,10,0.97); padding: 1rem 2rem 2rem; gap: 1rem; }
   .nav-toggle { display: block; }
   section { padding: 3rem 1.2rem; }
   .hero { padding: 5rem 1.2rem 3rem; }
@@ -403,15 +184,18 @@ footer a:hover { color: var(--white); }
   .tools-grid { grid-template-columns: 1fr; }
   .hero h1 { font-size: 2.4rem; }
 }
-
-/* PRINT */
 @media print {
   nav, .scroll-indicator, .earlier-toggle { display: none; }
   body { background: #fff; color: #000; }
   .hero { min-height: auto; background: #fff; }
-  .hero h1, .section-title, h3, h4, strong, .hero-stat .number { color: #000; }
   section { background: #fff !important; padding: 1rem 0; }
-  .exp-content li { border-left-color: #ccc; }
+  .hero h1, .section-title, h3, h4, strong, .hero-stat .number,
+  .exp-date, .exp-content h3, .kpi-item .kpi-val, .project-card h3,
+  .edu-item h4, .comp-group h3, .kpi-group h3, .edu-col h3, .tools-col h3,
+  .tools-col .tool-cat, .exp-content li strong { color: #000 !important; }
+  .profile-text p, .exp-content li, .comp-group li, .project-card p,
+  .edu-item li, .tools-col li, .contact-bar a, .contact-bar span,
+  .exp-company, .exp-desc, .exp-note { color: #333 !important; }
 }
 </style>
 </head>
@@ -420,9 +204,7 @@ footer a:hover { color: var(--white); }
 <nav>
   <div class="nav-inner">
     <a href="#" class="logo">Simona Ilie</a>
-    <button class="nav-toggle" onclick="document.querySelector('nav ul').classList.toggle('open')" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="nav-toggle" onclick="document.querySelector('nav ul').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
     <ul>
       <li><a href="#profile">Profile</a></li>
       <li><a href="#experience">Experience</a></li>
@@ -433,51 +215,53 @@ footer a:hover { color: var(--white); }
   </div>
 </nav>
 
-<!-- HERO -->
+<!-- HERO — DARK -->
 <section class="hero" id="top">
   <span class="hero-label">Operations · Strategy · Systems</span>
-  <h1>Simona Ilie</h1>
-  <p class="hero-subtitle">
-    Operations Lead &nbsp;·&nbsp; Agency Builder &amp; Fixer &nbsp;·&nbsp; Systems Architect
-  </p>
-  <p class="hero-quote">"The best or nothing — not as a slogan, but as an operating standard."</p>
+  <h1>Simona Ilie (Romascanu)</h1>
+  <p class="hero-subtitle">Operations Lead &middot; Agency Builder &amp; Fixer &middot; Systems Architect</p>
+  <p class="hero-subtitle2">Operating Model Design · Workflow Optimization · Cross-Market Delivery · Strategy, Operating Model Design &amp; Delivery Excellence · Cross-Functional Scaling</p>
+  <p class="hero-quote"><em>The best or nothing.</em></p>
   <div class="hero-stats">
-    <div class="hero-stat"><span class="number">20+</span><span class="label">Years Experience</span></div>
-    <div class="hero-stat"><span class="number">$3.5M+</span><span class="label">Budgets Managed</span></div>
-    <div class="hero-stat"><span class="number">7</span><span class="label">Departments Built</span></div>
-    <div class="hero-stat"><span class="number">5+</span><span class="label">Years, Leadership Team</span></div>
+    <div class="hero-stat"><span class="number">18+</span><span class="label">years of experience</span></div>
+    <div class="hero-stat"><span class="number">$3.5M+</span><span class="label">annual budgets managed</span></div>
+    <div class="hero-stat"><span class="number">7 depts</span><span class="label">3 cross-functional teams</span></div>
+    <div class="hero-stat"><span class="number">5+ yrs</span><span class="label">Leadership Team member</span></div>
   </div>
   <a href="#profile" class="scroll-indicator">Scroll</a>
 </section>
 
-<!-- PROFILE -->
-<section class="profile" id="profile">
+<!-- PROFILE — LIGHT -->
+<section class="light" id="profile">
   <div class="container">
     <span class="section-label">Profile</span>
-    <h2 class="section-title">Operations and brand leader with 20+ years across digital agency management, enterprise brand strategy and creative direction.</h2>
     <div class="profile-text">
-      <p>Specialist in <strong>strategic operations, operating model design, SOP architecture and workflow optimisation</strong> — with a track record of building from zero in startup and resource-constrained environments, and an advanced AI practice spanning <strong>agentic workflow architecture, automation design and AI-native operational systems.</strong></p>
-      <p>Currently Head of Operations at Upswing, member of the Leadership Team for 5+ years across two senior roles. Co-owner of business decisions spanning business structure, product portfolio, brand strategy, pricing, hiring, client pitching and OKRs.</p>
-      <p>Built seven departments, 9 specialist roles, 30+ SOPs and frameworks for all products and services. Reduced rework by <strong>75%</strong>, feedback loops by <strong>50%</strong>, new hire ramp-up from 90 to <strong>30 days</strong>.</p>
-      <div class="profile-quote">I build them fast, with limited resources, in environments that don't yet have all the answers — because that's where I've always worked best.</div>
-      <p>Prior to agency operations: 12 years as Senior Brand Manager at Vertical Entertainment (Warner Bros. exclusive licensee in Romania) — managing $1.5M+ annual budgets, 350+ campaigns and 200+ events with up to 150% objective overachievement.</p>
+      <p>Operations and brand leader with <strong>20+ years of experience</strong> across digital agency management, enterprise brand strategy, creative direction and large-scale operational transformation. Specialist in <strong>strategic operations, operating model design, SOP architecture, workflow optimisation, cross-functional delivery governance</strong>, <strong>operational frameworks and new product lines - from org architecture and client portfolio management to Generative Engine Optimization methodology and agentic AI workflows.</strong><br><strong>Proven success in building scalable systems from the ground up in fast-growth and greenfield environments.</strong></p>
+
+      <div class="profile-quote">I believe in "the best or nothing" - not as a slogan, but as an operating standard. The frameworks I build are designed for quiet excellence: invisible when they work, impossible to ignore when they don't. I build them fast, with limited resources, in environments that don't yet have all the answers - because that's where I've always worked best.</div>
+
+      <p>Currently Head of Operations at Upswing and a member of the Leadership Team for 5+ years across two senior roles. Co-owner of business decisions spanning business structure, product portfolio, product development, brand strategy, pricing strategy, hiring, client pitching, OKRs and internal workflows.</p>
+
+      <p>Built seven departments, 9 specialist roles, 30+ SOPs and frameworks for all products and services, client approach, decisional thinking, conflict management, risk assessment and escalation.</p>
+
+      <p>Reduced rework by 75%, feedback loops by 50%, and new hire ramp-up from 90 to 30 days. Prior to agency operations, 12 years as Senior Brand Manager at Vertical Entertainment (Warner Bros. exclusive licensee in Romania) - managing $1.5M+ annual budgets, 350+ campaigns and 200+ events with up to 150% objective overachievement.</p>
     </div>
     <div class="contact-bar">
       <a href="mailto:simona.romascanu@gmail.com">simona.romascanu@gmail.com</a>
-      <a href="tel:+40722284203">+40 722 284 203</a>
+      <a href="tel:+40722284203">+40722 284 203</a>
       <a href="https://linkedin.com/in/monaromascanu" target="_blank">linkedin.com/in/monaromascanu</a>
       <span>Bucharest, Romania</span>
     </div>
   </div>
 </section>
 
-<!-- COMPETENCIES -->
-<section class="competencies" id="competencies">
+<!-- COMPETENCIES — DARK -->
+<section style="background:var(--near-black);" id="competencies">
   <div class="container">
     <span class="section-label">Core Competencies</span>
     <div class="comp-grid">
       <div class="comp-group">
-        <h3>Strategic Operations</h3>
+        <h3>Strategic operations &amp; governance</h3>
         <ul>
           <li>Strategic Operations</li>
           <li>Operating Model Design</li>
@@ -488,29 +272,29 @@ footer a:hover { color: var(--white); }
         </ul>
       </div>
       <div class="comp-group">
-        <h3>Delivery &amp; Flow</h3>
+        <h3>Delivery excellence &amp; flow</h3>
         <ul>
           <li>Delivery Excellence</li>
-          <li>Agile / Kanban Flow</li>
+          <li>Agile / Kanban Flow Management</li>
           <li>Workflow Optimisation</li>
           <li>Quality Governance</li>
-          <li>WIP &amp; Bottleneck Mgmt</li>
+          <li>WIP &amp; Bottleneck Management</li>
           <li>SLA / Quality Gates</li>
         </ul>
       </div>
       <div class="comp-group">
-        <h3>Leadership &amp; Scale</h3>
+        <h3>Leadership &amp; scale</h3>
         <ul>
           <li>Cross-functional Leadership</li>
           <li>Resource Orchestration</li>
           <li>Team Building &amp; Enablement</li>
           <li>Stakeholder Management</li>
           <li>Client Portfolio Governance</li>
-          <li>Org Design &amp; Capability</li>
+          <li>Org Design &amp; Capability Building</li>
         </ul>
       </div>
       <div class="comp-group">
-        <h3>Innovation</h3>
+        <h3>Innovation &amp; transformation</h3>
         <ul>
           <li>AI Workflow Design</li>
           <li>Agentic AI Orchestration</li>
@@ -524,120 +308,120 @@ footer a:hover { color: var(--white); }
   </div>
 </section>
 
-<!-- EXPERIENCE -->
-<section class="experience" id="experience">
+<!-- EXPERIENCE — LIGHT -->
+<section class="light" id="experience">
   <div class="container">
     <span class="section-label">Experience</span>
-    <h2 class="section-title">Career</h2>
 
-    <!-- Head of Agency Operations -->
     <div class="exp-entry">
       <div class="exp-meta">
-        <div class="exp-date">2023 — Present</div>
-        <div class="exp-company">Upswing<br>Organic Digital Marketing Agency</div>
+        <div class="exp-date">2023 — present</div>
+        <div class="exp-company">Upswing - Organic Digital Marketing Agency</div>
         <div class="exp-location">Bucharest, Romania</div>
-        <div class="exp-team">Leadership Team: CEO · Head of People Ops · Head of Revenue</div>
+        <div class="exp-team">Leadership Team: CEO · Head of People Operations · Head of Revenue</div>
       </div>
       <div class="exp-content">
         <h3>Head of Agency Operations</h3>
-        <p class="exp-desc">Dual mandate: operational innovation and operational excellence across all agency verticals — SEO, content, video, outreach, GEO.</p>
+        <p class="exp-desc">Dual mandate: operational innovation and operational excellence across all agency verticals - SEO, content, video, outreach, GEO.</p>
 
-        <h4>Builder — Organisational Architecture &amp; Systems</h4>
+        <h4>Builder - Organisational Architecture &amp; Systems</h4>
+        <p class="exp-note">All systems below were built in a startup-like environment: no inherited infrastructure, limited resources, fast timelines and simultaneous operational and strategic ownership.</p>
         <ul>
           <li><strong>Designed and implemented the agency operating model</strong> end-to-end: organisational structure, service architecture, role definitions, RACI matrices and SLA frameworks across 7 departments and 3 cross-functional teams</li>
-          <li><strong>Redesigned the agency structure</strong> on flat, non-hierarchical principles following Frederic Laloux and Corporate Rebels — replacing command-and-control with distributed responsibility</li>
-          <li><strong>Built and structured 7 departments from first principles:</strong> Content Production, Content Strategy, SEO &amp; GEO Strategy, Video, Descriptions, Project Management, Outreach</li>
-          <li><strong>Created 9 new specialist roles</strong> and evolved existing ones: Video Manager, Video Executive, Descriptions PM, Outreach Manager, Content Strategist, GEO Specialist, Content Manager</li>
-          <li><strong>Architected the client tiering model</strong> across four budget tiers: eligibility criteria, included services, differentiated SLAs and WIP limits — reducing senior team overload across 80–100 active clients</li>
+          <li><strong>Redesigned the agency structure</strong> on flat, non-hierarchical principles following Frederic Laloux (Reinventing Organizations) and Corporate Rebels - replacing command-and-control with distributed responsibility and self-management</li>
+          <li><strong>Built and structured 7 departments from first principles</strong>: Content Production, Content Strategy, SEO &amp; GEO Strategy, Video, Descriptions, Project Management, Outreach - each with workflows, service methodologies and quality standards</li>
+          <li><strong>Created 9 new specialist roles</strong> and evolved existing ones: Video Manager, Video Executive, Descriptions Project Manager, Outreach Manager, Content Strategist, GEO Specialist, Content Manager; transformed Customer Success → Project Manager, Technical SEO → SEO Strategist</li>
+          <li><strong>Architected the client tiering model</strong> across four budget tiers: eligibility criteria, included services, differentiated SLAs and WIP limits - reducing senior team overload across 80–100 active clients</li>
           <li><strong>Produced 30+ SOPs, SLAs, playbooks and operational procedures</strong> covering all service lines</li>
-          <li><strong>Authored the Client Intimacy Playbook</strong> — Red Card Policy, Monthly Sync Sessions, Client Health Scoring and Risk Management Strategies</li>
+          <li><strong>Redesigned client onboarding</strong> around structured client knowledge and education - onboarding completed within max 2 days post-signing, followed by 6-month reviews and professional offboarding</li>
+          <li><strong>Authored the Client Intimacy Playbook</strong> - Red Card Policy, Monthly Sync Sessions, Client Health Scoring and Risk Management Strategies; converted retention from individual heroics into a systemic output</li>
         </ul>
 
-        <h4>Fixer — Optimisation, Escalation &amp; Governance</h4>
+        <h4>Fixer - Optimisation, Escalation &amp; Governance</h4>
         <ul>
-          <li><strong>Reduced time-to-operational for new hires from 90 to 30 days</strong> — structured onboarding, role-specific playbooks and competency frameworks (−67%)</li>
-          <li><strong>Reduced content feedback loops by 50%</strong> — redesigned review and approval flows, definition-of-done criteria and brief validation checkpoints</li>
-          <li><strong>Reduced rework by 75%</strong> — quality gates, brief compliance checks and first-time-right standards across all content workstreams</li>
-          <li><strong>Managed $2M+ annual operational budgets</strong> — resource allocation, tiered structures, campaign management and reporting across all active clients</li>
-          <li><strong>Designed the post-merger operational integration architecture</strong> — 100-day plan and end-of-year framework covering cultural alignment, portfolio consolidation and systems unification</li>
-          <li><strong>Implemented Agile / Kanban operational frameworks</strong> with WIP limits, flow metrics, sprint-style planning cycles and structured retrospectives</li>
-          <li><strong>Act as escalation point and crisis prevention owner</strong> — prioritisation frameworks, bottleneck resolution and cross-team conflict mediation</li>
+          <li><strong>Reduced time-to-operational for new hires from 90 to 30 days</strong> - through structured onboarding, role-specific playbooks and competency frameworks (-67%)</li>
+          <li><strong>Reduced content feedback loops by 50%</strong> - redesigned review and approval flows, definition-of-done criteria and brief validation checkpoints</li>
+          <li><strong>Reduced rework by 75%</strong> - quality gates, brief compliance checks and first-time-right standards across all content workstreams</li>
+          <li><strong>Managed $2M+ annual operational budgets</strong> - resource forecasting, tiered structures, billing integration and reporting across 80–100 active clients</li>
+          <li><strong>Designed the post-merger operational integration architecture</strong> - mapped the full integration structure, authored the 100-day plan and end-of-year framework covering cultural alignment, portfolio consolidation and systems unification</li>
+          <li><strong>Implemented Agile / Kanban operational frameworks</strong> with WIP limits, flow metrics (cycle time, blocker aging, SLA adherence), sprint-style planning cycles and structured retrospectives - applied across content production, review and client approval workstreams</li>
+          <li><strong>Act as escalation point and crisis prevention owner</strong> - prioritisation frameworks, bottleneck resolution protocols and cross-team conflict mediation</li>
         </ul>
 
-        <h4>Strategic Models — Frameworks Designed &amp; Deployed</h4>
+        <h4>Strategic Models - Frameworks Designed &amp; Deployed</h4>
         <ul>
-          <li><strong>GEO Framework (Generative Engine Optimisation)</strong> — proprietary methodology: Owned Content optimisation + Brand Mentions in AI-generated answers; GEO Mastery Workshop and AI Literacy courses</li>
-          <li><strong>Agentic AI workflow orchestration</strong> — design and architecture of agentic flows using Antigravity and AI platforms; orchestrating agentic nodes and multi-step workflows</li>
-          <li><strong>Play to Win Strategic Model</strong> — adapted Lafley-Martin for content strategy decisions and agency-level planning</li>
-          <li><strong>Holistic Content Strategy Model</strong> — Content Tilt approach, brand analysis, buyer personas, content mapping, tone of voice and Content Health Formula KPIs</li>
-          <li><strong>Client Intimacy &amp; Retention System</strong> — onboarding / offboarding playbooks, tiered SLA documents, exit interview frameworks</li>
+          <li><strong>GEO Framework (Generative Engine Optimisation)</strong> - proprietary methodology: Owned Content optimisation + Brand Mentions in AI-generated answers; GEO Mastery Workshop and AI Literacy courses to upskill the full team; premium product line for all client tiers</li>
+          <li><strong>Agentic AI workflow orchestration</strong> - design and architecture of agentic flows and automation models using Antigravity and AI platforms; orchestrating agentic nodes and multi-step workflows (architectural ownership, not technical implementation)</li>
+          <li><strong>Play to Win Strategic Model</strong> - adapted Lafley-Martin for content strategy decisions and agency-level planning</li>
+          <li><strong>Holistic Content Strategy Model</strong> - built on the Content Tilt approach (intersection of brand expertise and audience pain points); deliverable spanning empirical brand analysis, buyer personas, content mapping, tone of voice and Content Health Formula KPIs</li>
+          <li><strong>Client Intimacy &amp; Retention System</strong> - onboarding / offboarding playbooks, tiered SLA documents, exit interview frameworks, knowledge transfer processes</li>
         </ul>
 
-        <h4>Team Building — Formation, Norming &amp; Enablement</h4>
+        <h4>Team Building - Formation, Norming &amp; Enablement</h4>
         <ul>
           <li><strong>Built and led cross-functional teams</strong> from recruitment and onboarding through to performance governance</li>
-          <li><strong>Designed internal training programmes</strong> for GEO, content strategy and operating principles</li>
-          <li><strong>Built decisional and critical thinking frameworks:</strong> conflict management protocols, escalation paths, risk assessment models</li>
+          <li><strong>Designed internal training programmes</strong> for GEO, content strategy and operating principles - facilitator guides, competency frameworks, tool-specific enablement</li>
+          <li><strong>Built decisional and critical thinking frameworks</strong>: conflict management protocols, escalation paths, risk assessment and risk management models</li>
+          <li><strong>Embedded knowledge-sharing culture</strong> through playbooks, SOPs, escalation matrices and standardised decision templates</li>
         </ul>
 
-        <h4>Leadership Team — Business Co-Ownership</h4>
+        <h4>Leadership Team - Business Co-Ownership</h4>
         <ul>
-          <li><strong>Active member of the Leadership Team</strong> — co-responsible for company vision, annual strategy and long-term objectives</li>
-          <li><strong>Co-led strategic business decisions:</strong> hiring, client pitching, budget planning, service expansion and organisational restructuring</li>
-          <li><strong>Led strategic workshops</strong> for the company and clients — alignment sessions, planning cycles and cross-functional prioritisation</li>
+          <li><strong>Active member of the Leadership Team</strong> (CEO / Head of People Ops / Head of Revenue) - co-responsible for company vision, annual strategy and long-term objectives across sales, operations and product development</li>
+          <li><strong>Co-led strategic business decisions</strong>: hiring and firing, client pitching, budget planning, service expansion and organisational restructuring</li>
+          <li><strong>Led strategic workshops</strong> for the company and clients - alignment sessions, planning cycles and cross-functional prioritisation</li>
+          <li><strong>Acted as narrative developer</strong> during periods of organisational change: restructuring, transitions and post-merger integration</li>
         </ul>
       </div>
     </div>
 
-    <!-- Head of Content -->
     <div class="exp-entry">
       <div class="exp-meta">
         <div class="exp-date">Jan 2021 — Sep 2023</div>
-        <div class="exp-company">Upswing<br>Organic Digital Marketing Agency</div>
+        <div class="exp-company">Upswing - Organic Digital Marketing Agency</div>
         <div class="exp-location">Bucharest, Romania</div>
       </div>
       <div class="exp-content">
         <h3>Head of Content</h3>
         <ul>
-          <li><strong>Oversaw all content department facets:</strong> strategy, implementation, content management, outreach, video and descriptions</li>
+          <li><strong>Oversaw all content department facets</strong>: strategy, implementation, content management, outreach, video and descriptions</li>
           <li><strong>Crafted and deployed strategies</strong> aligned with company goals and client objectives across multiple concurrent accounts</li>
-          <li><strong>Strengthened cross-departmental workflows</strong> — identified and redesigned missing or inefficient procedures</li>
-          <li><strong>Built decisional and thinking frameworks:</strong> critical thinking models, conflict management protocols, escalation paths</li>
-          <li><strong>Member of the Leadership Team</strong> — participated in hiring, client pitching, OKR-setting and yearly strategy</li>
-          <li><strong>Led strategic workshops</strong> — alignment sessions, planning cycles and content strategy rollouts</li>
+          <li><strong>Strengthened cross-departmental workflows</strong> - identified and redesigned missing or inefficient procedures</li>
+          <li><strong>Built decisional and thinking frameworks</strong>: critical thinking models, conflict management protocols, escalation paths and risk assessment tools</li>
+          <li><strong>Member of the Leadership Team</strong> - participated in hiring and firing, client pitching, OKR-setting and yearly strategy across sales, operations and product development</li>
+          <li><strong>Led strategic workshops</strong> - alignment sessions, planning cycles and content strategy rollouts for teams and clients</li>
         </ul>
       </div>
     </div>
 
-    <!-- Senior Brand Manager -->
     <div class="exp-entry">
       <div class="exp-meta">
         <div class="exp-date">Oct 2007 — Jan 2020</div>
-        <div class="exp-company">Vertical Entertainment<br>Warner Bros. Exclusive Licensee, Romania</div>
+        <div class="exp-company">Vertical Entertainment - Warner Bros. Exclusive Licensee, Romania</div>
         <div class="exp-location">Bucharest, Romania</div>
+        <div class="exp-team">Exclusive theatrical licensee for Warner Bros. Pictures; also distributed Lionsgate, DreamWorks, Europa Corp, StudioCanal and others</div>
       </div>
       <div class="exp-content">
         <h3>Senior Brand Manager</h3>
-        <p class="exp-desc">12 years in charge of Strategy, Creation, Creative Direction and Relationship Management. Market leader with 30%+ market share, year on year.</p>
+        <p class="exp-desc">12 years in charge of Strategy, Creation, Creative Direction and Relationship Management. Positioned Vertical Entertainment as market leader with 30%+ market share, year on year.</p>
 
         <h4>Operations &amp; Campaign Management</h4>
         <ul>
-          <li><strong>Managed annual budgets exceeding $1.5M USD</strong> — delivering 100K–400K USD in additional value per title through partner marketing and negotiation</li>
-          <li><strong>Overachieved objectives by up to 150%</strong> — record-breaking ticket sales and sustained Top 10 annual grossing features</li>
-          <li><strong>Crafted and executed 350+ campaigns</strong> (B2B and B2C) — research, strategy, creation, implementation and evaluation</li>
-          <li><strong>Produced 200+ large-scale events</strong> — red carpet premieres, outdoor activations, networking and children's events</li>
+          <li><strong>Managed annual budgets exceeding $1.5M USD</strong> - delivering 100K–400K USD in additional value per title through partner marketing and negotiation</li>
+          <li><strong>Overachieved objectives by up to 150%</strong> - record-breaking ticket sales and sustained Top 10 annual grossing features</li>
+          <li><strong>Crafted and executed 350+ campaigns</strong> (B2B and B2C) - research, strategy, creation, implementation and evaluation</li>
+          <li><strong>Produced 200+ large-scale events</strong> - red carpet premieres, outdoor activations, networking and children's events</li>
         </ul>
 
         <h4>Strategic &amp; Relationship Management</h4>
         <ul>
-          <li><strong>Sole interface with Warner Bros.</strong> for strategy, approvals and brand standards — 9-year relationship at zero compliance failure</li>
-          <li><strong>Orchestrated complex partner ecosystems</strong> — cinemas, media agencies, third-party sponsors, creative suppliers</li>
-          <li><strong>Built data-driven campaign frameworks</strong> — audience research, box-office forecasting, performance tracking and post-campaign evaluation</li>
+          <li><strong>Sole interface with Warner Bros.</strong> for strategy, approvals and brand standards - 9-year relationship at zero compliance failure</li>
+          <li><strong>Orchestrated complex partner ecosystems</strong> - cinemas, media agencies, third-party sponsors, creative suppliers</li>
+          <li><strong>Built data-driven campaign frameworks</strong> - audience research, box-office forecasting, performance tracking and post-campaign evaluation</li>
         </ul>
       </div>
     </div>
 
-    <!-- Earlier Career -->
     <button class="earlier-toggle" onclick="document.querySelector('.earlier-career').classList.toggle('show'); this.textContent = this.textContent.includes('Earlier') ? 'Hide Earlier Career' : 'Earlier Career +';">Earlier Career +</button>
 
     <div class="earlier-career">
@@ -650,8 +434,8 @@ footer a:hover { color: var(--white); }
         <div class="exp-content">
           <h3>Creative Director &amp; Managing Partner</h3>
           <ul>
-            <li><strong>Built the agency from zero</strong> in a startup context — 0 to 150+ projects in 2 years, 85%+ return business rate</li>
-            <li><strong>Led a team of 20</strong> under resource constraints — recruitment, training, creative direction and performance management</li>
+            <li><strong>Built the agency from zero</strong> in a startup context: identity, brand strategy, go-to-market - 0 to 150+ projects in 2 years, 85%+ return business rate</li>
+            <li><strong>Led a team of 20</strong> (creatives, account managers, sales) under resource constraints - recruitment, training, creative direction and performance management</li>
             <li><strong>Generated new business</strong> through content marketing, buyer persona mapping and inbound tactics</li>
           </ul>
         </div>
@@ -660,15 +444,15 @@ footer a:hover { color: var(--white); }
       <div class="exp-entry">
         <div class="exp-meta">
           <div class="exp-date">2004 — 2007</div>
-          <div class="exp-company">KennoMedia<br>International Web Design &amp; Development</div>
+          <div class="exp-company">KennoMedia - International Web Design &amp; Development</div>
           <div class="exp-location">Bucharest, Romania</div>
         </div>
         <div class="exp-content">
           <h3>Creative Director</h3>
           <ul>
             <li><strong>Doubled company turnover</strong> in year one; grew team from 5 to 20 people</li>
-            <li><strong>Opened the Romanian market</strong> — expanded from exclusively international clients to domestic, adding 100+ new projects</li>
-            <li><strong>Delivered 200+ branding and web projects:</strong> naming, brand strategy, identity, communication strategy, website builds and SEO</li>
+            <li><strong>Opened the Romanian market</strong> - expanded from exclusively international clients to domestic, adding 100+ new projects</li>
+            <li><strong>Delivered 200+ branding and web projects</strong>: naming, brand strategy, identity, communication strategy, website builds and SEO</li>
           </ul>
         </div>
       </div>
@@ -678,12 +462,12 @@ footer a:hover { color: var(--white); }
           <div class="exp-date">2004</div>
           <div class="exp-company">Icon Advertising</div>
           <div class="exp-location">Bucharest, Romania</div>
+          <div class="exp-team">Clients: Volkswagen, Porsche Bucharest North, Zepter, Franke, Autozone</div>
         </div>
         <div class="exp-content">
           <h3>Copywriter</h3>
-          <p class="exp-desc">Clients: Volkswagen, Porsche Bucharest North, Zepter, Franke, Autozone</p>
           <ul>
-            <li><strong>Planned, created and delivered 30+ communication campaigns</strong> — naming, slogans, headlines, print, radio and press releases for automotive and lifestyle brands</li>
+            <li><strong>Planned, created and delivered 30+ communication campaigns</strong> - naming, slogans, headlines, print, radio and press releases for automotive and lifestyle brands</li>
           </ul>
         </div>
       </div>
@@ -692,53 +476,52 @@ footer a:hover { color: var(--white); }
   </div>
 </section>
 
-<!-- KPIs -->
-<section class="kpis" id="kpis">
+<!-- KPIs — DARK -->
+<section style="background:var(--near-black);" id="kpis">
   <div class="container">
     <span class="section-label">Key Performance Indicators</span>
-    <h2 class="section-title">Metrics Owned &amp; Tracked</h2>
+    <p style="font-size:0.85rem; color:var(--light-gray); font-style:italic; margin-bottom:2rem;">Metrics owned and tracked</p>
     <div class="kpi-grid">
       <div class="kpi-group">
         <h3>Delivery</h3>
-        <div class="kpi-item"><div class="kpi-val">SLA adherence %</div><div class="kpi-desc">On-time rate per tier, 80–100 clients</div></div>
-        <div class="kpi-item"><div class="kpi-val">−50% feedback loops</div><div class="kpi-desc">Redesigned review &amp; approval flows</div></div>
-        <div class="kpi-item"><div class="kpi-val">−75% rework rate</div><div class="kpi-desc">Quality gates, first-time-right standards</div></div>
-        <div class="kpi-item"><div class="kpi-val">−67% ramp-up time</div><div class="kpi-desc">New hires operational in 30 vs. 90 days</div></div>
+        <div class="kpi-item"><div class="kpi-val">SLA adherence %</div><div class="kpi-desc">on-time rate per tier, 80–100 clients</div></div>
+        <div class="kpi-item"><div class="kpi-val">−50% feedback loops</div><div class="kpi-desc">redesigned review &amp; approval flows</div></div>
+        <div class="kpi-item"><div class="kpi-val">−75% rework rate</div><div class="kpi-desc">quality gates and first-time-right standards</div></div>
+        <div class="kpi-item"><div class="kpi-val">−67% ramp-up time</div><div class="kpi-desc">new hires operational in 30 vs. 90 days</div></div>
       </div>
       <div class="kpi-group">
         <h3>Quality</h3>
-        <div class="kpi-item"><div class="kpi-val">Rework rate %</div><div class="kpi-desc">Volume requiring revision post-QA</div></div>
-        <div class="kpi-item"><div class="kpi-val">Defect leakage</div><div class="kpi-desc">Issues reaching client vs. caught internally</div></div>
-        <div class="kpi-item"><div class="kpi-val">Client escalations</div><div class="kpi-desc">Frequency and resolution time</div></div>
-        <div class="kpi-item"><div class="kpi-val">Brief compliance</div><div class="kpi-desc">Deliverables meeting spec at first pass</div></div>
+        <div class="kpi-item"><div class="kpi-val">Rework rate %</div><div class="kpi-desc">volume requiring revision post-QA</div></div>
+        <div class="kpi-item"><div class="kpi-val">Defect leakage</div><div class="kpi-desc">issues reaching client vs. caught internally</div></div>
+        <div class="kpi-item"><div class="kpi-val">Client escalations</div><div class="kpi-desc">frequency and resolution time</div></div>
+        <div class="kpi-item"><div class="kpi-val">Brief compliance</div><div class="kpi-desc">deliverables meeting spec at first pass</div></div>
       </div>
       <div class="kpi-group">
         <h3>Financial</h3>
-        <div class="kpi-item"><div class="kpi-val">$2M+ / year</div><div class="kpi-desc">Operational budgets at Upswing</div></div>
-        <div class="kpi-item"><div class="kpi-val">$1.5M+ / year</div><div class="kpi-desc">Campaign budgets at Warner Bros.</div></div>
-        <div class="kpi-item"><div class="kpi-val">Gross margin</div><div class="kpi-desc">Per client, tier and service line</div></div>
-        <div class="kpi-item"><div class="kpi-val">Budget variance</div><div class="kpi-desc">Forecast vs. actuals, tiered reporting</div></div>
+        <div class="kpi-item"><div class="kpi-val">$2M+ / year</div><div class="kpi-desc">operational budgets managed at Upswing</div></div>
+        <div class="kpi-item"><div class="kpi-val">$1.5M+ / year</div><div class="kpi-desc">campaign budgets at Warner Bros.</div></div>
+        <div class="kpi-item"><div class="kpi-val">Gross margin</div><div class="kpi-desc">per client, tier and service line</div></div>
+        <div class="kpi-item"><div class="kpi-val">Budget variance</div><div class="kpi-desc">forecast vs. actuals, tiered reporting</div></div>
       </div>
       <div class="kpi-group">
         <h3>Team &amp; Scale</h3>
-        <div class="kpi-item"><div class="kpi-val">9 roles created</div><div class="kpi-desc">New specialist positions built from zero</div></div>
+        <div class="kpi-item"><div class="kpi-val">9 roles created</div><div class="kpi-desc">new specialist positions built from zero</div></div>
         <div class="kpi-item"><div class="kpi-val">7 departments</div><div class="kpi-desc">3 cross-functional teams simultaneously</div></div>
-        <div class="kpi-item"><div class="kpi-val">30+ SOPs</div><div class="kpi-desc">Playbooks, SLAs and procedures</div></div>
-        <div class="kpi-item"><div class="kpi-val">80–100 clients</div><div class="kpi-desc">Active portfolio under governance</div></div>
+        <div class="kpi-item"><div class="kpi-val">30+ SOPs</div><div class="kpi-desc">playbooks, SLAs and procedures</div></div>
+        <div class="kpi-item"><div class="kpi-val">80–100 clients</div><div class="kpi-desc">active portfolio under operational governance</div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PROJECTS -->
-<section class="projects" id="projects">
+<!-- PROJECTS — LIGHT -->
+<section class="light" id="projects">
   <div class="container">
     <span class="section-label">Selected Projects</span>
-    <h2 class="section-title">Highlights</h2>
     <div class="project-grid">
       <div class="project-card">
         <h3>GEO Framework</h3>
-        <p>Romania's first proprietary GEO methodology from zero: architectural framework, application guides, 1-day team enablement workshop, integrated toolstack. Positioned Upswing as pioneer in the Romanian GEO space.</p>
+        <p>Built Romania's first proprietary GEO methodology from zero: architectural framework, application guides, 1-day team enablement workshop, integrated toolstack. Positioned Upswing as pioneer in the Romanian GEO space.</p>
       </div>
       <div class="project-card">
         <h3>Flat Org Design</h3>
@@ -746,26 +529,26 @@ footer a:hover { color: var(--white); }
       </div>
       <div class="project-card">
         <h3>Operating Model</h3>
-        <p>Designed the agency's complete operating model across 7 departments and 3 cross-functional teams: end-to-end workflows, RACI matrices, SLAs, quality gates and escalation paths — backed by 30+ SOPs.</p>
+        <p>Designed the agency's complete operating model across 7 departments and 3 cross-functional teams: end-to-end workflows, RACI matrices, SLAs, quality gates and escalation paths - backed by 30+ SOPs and playbooks.</p>
       </div>
       <div class="project-card">
         <h3>Client Tiering</h3>
-        <p>Created a 4-tier client model across 80–100 clients: eligibility, service scope, differentiated SLAs and WIP limits. Result: increased individual and team capacity by 30–50%.</p>
+        <p>Created a 4-tier client model across current clients &amp; leads: eligibility, service scope, differentiated SLAs and WIP limits. Paired with onboarding redesign. Result: increased individual and team capacity with 30 to 50%.</p>
       </div>
       <div class="project-card">
         <h3>Post-merger Integration</h3>
-        <p>Designed the full integration architecture: 100-day operational plan and end-of-year framework covering cultural alignment, portfolio consolidation and systems unification across two entities.</p>
+        <p>Designed the full integration architecture for a post-merger entity: authored the 100-day operational plan and end-of-year framework covering cultural alignment, portfolio consolidation and systems unification. Scope included operating model design, role mapping and process unification across two entities.</p>
       </div>
       <div class="project-card">
         <h3>WB Market Leader</h3>
-        <p>9-year sole brand ops lead for Warner Bros. in Romania — sustained 30%+ market share, $1.5M+ annual budgets, 350+ campaigns, 200+ events, up to 150% target overachievement.</p>
+        <p>9-year sole brand ops lead for Warner Bros. in Romania - sustained 30%+ market share, $1.5M+ annual budgets, 350+ campaigns, 200+ events, up to 150% target overachievement.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- EDUCATION -->
-<section class="education" id="education">
+<!-- EDUCATION — DARK -->
+<section style="background:var(--near-black);" id="education">
   <div class="container">
     <span class="section-label">Education, Frameworks &amp; Certifications</span>
     <div class="edu-grid">
@@ -773,78 +556,78 @@ footer a:hover { color: var(--white); }
         <h3>Education</h3>
         <div class="edu-item">
           <h4>Master in Advertising</h4>
-          <p>Advertising, PR, Media, Communication Theory, Consumer Psychology<br>SNSPA · 2004–2005</p>
+          <p>Advertising, PR, Media, Communication Theory, Consumer Psychology<br>SNSPA | 2004–2005</p>
         </div>
         <div class="edu-item">
           <h4>BA, Letters</h4>
-          <p>University of Bucharest · 1999–2002</p>
+          <p>University of Bucharest | 1999–2002</p>
         </div>
       </div>
       <div class="edu-col">
         <h3>Applied Frameworks</h3>
         <ul>
-          <li>Reinventing Organizations — Laloux</li>
-          <li>Corporate Rebels — flat org &amp; self-management</li>
-          <li>Playing to Win — Lafley &amp; Martin</li>
-          <li>Agile / Kanban — operational flow</li>
-          <li>Leading Antifragile Teams — Teamology (2023)</li>
+          <li>Reinventing Organizations - Frederic Laloux</li>
+          <li>Corporate Rebels - flat org &amp; self-management</li>
+          <li>Playing to Win - Lafley &amp; Martin</li>
+          <li>Agile / Kanban - operational flow management</li>
+          <li>Leading High-Performing Antifragile Teams - Teamology (2023)</li>
         </ul>
       </div>
       <div class="edu-col">
         <h3>Certifications</h3>
         <div class="edu-item">
           <h4>Inbound Marketing Certified</h4>
-          <p>HubSpot Academy · 2020</p>
+          <p>HubSpot Academy | 2020</p>
         </div>
         <div class="edu-item">
           <h4>Social Media Marketing</h4>
-          <p>HubSpot Academy · 2020</p>
+          <p>HubSpot Academy | 2020</p>
         </div>
         <div class="edu-item">
           <h4>Fundamentals of Digital Marketing</h4>
-          <p>Google Digital Garage · 2020</p>
+          <p>Google Digital Garage | 2020</p>
         </div>
         <div class="edu-item">
           <h4>Brand Writing</h4>
-          <p>Content Marketing Conference · 2020</p>
+          <p>Content Marketing Conference | 2020</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- TOOLS -->
-<section class="tools">
+<!-- TOOLS — LIGHT -->
+<section class="light">
   <div class="container">
     <span class="section-label">Languages &amp; Tools</span>
     <div class="tools-grid">
       <div class="tools-col">
         <h3>Languages</h3>
         <ul>
-          <li>Romanian — native</li>
-          <li>English — professional advanced (C1)</li>
+          <li>Romanian - native</li>
+          <li>English - professional advanced (C1)</li>
         </ul>
       </div>
       <div class="tools-col">
         <h3>Tools &amp; Platforms</h3>
         <ul>
-          <li><span class="tool-cat">PM:</span> ClickUp, Basecamp, Coda, Notion, custom ERP &amp; CRM, Adobe CMS</li>
-          <li><span class="tool-cat">AI:</span> Claude, ChatGPT, Gemini — prompt engineering &amp; workflow design</li>
-          <li><span class="tool-cat">Agentic:</span> Antigravity — agentic architecture, automation flow design, node orchestration</li>
-          <li><span class="tool-cat">Content &amp; SEO:</span> Whitepress, Ahrefs, SEOMonitor</li>
-          <li><span class="tool-cat">Analytics:</span> GA4, Search Console, Looker Studio, SEOMonitor</li>
+          <li><span class="tool-cat">PM:</span> ClickUp, Basecamp, Coda, Notion, custom ERP and CRM creation, familiar with Adobe CMS</li>
+          <li><span class="tool-cat">AI:</span> Claude, ChatGPT, Gemini - prompt engineering &amp; workflow design</li>
+          <li><span class="tool-cat">Automation &amp; Agentic:</span> Antigravity - agentic architecture, automation flow design, node orchestration</li>
+          <li><span class="tool-cat">Content &amp; SEO:</span> Whitepress, Ahrefs, SEOMonitor writer</li>
+          <li><span class="tool-cat">Analytics:</span> SEOMonitor, GA4, Search Console, Looker Studio</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
+<!-- FOOTER — DARK -->
 <footer>
-  <p class="footer-quote">"The best or nothing — built into every system, process and team."</p>
+  <p class="footer-quote"><em>The best or nothing - built into every system, process and team.</em></p>
   <div class="footer-links">
     <a href="mailto:simona.romascanu@gmail.com">simona.romascanu@gmail.com</a>
-    <a href="tel:+40722284203">+40 722 284 203</a>
+    <a href="tel:+40722284203">+40722 284 203</a>
     <a href="https://linkedin.com/in/monaromascanu" target="_blank">linkedin.com/in/monaromascanu</a>
   </div>
 </footer>
