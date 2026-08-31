@@ -1,21 +1,35 @@
-Why I'm the right fit
-1. I build systems from scratch, not manage what already exists. 
-At Upswing I architected structure, teams, processes, workflows and products from zero. That's the Builder mindset the role requires - not someone who inherits a system, but someone who creates one where nothing existed.
-2. Enterprise clients, multi-vertical complexity. 
-Warner Bros., Regina Maria, Edenred, Autoklass, Under Armour, Hervis — brands with complex approval structures and uncompromising quality standards. Scaling to 17 European markets for Mercedes-Benz is not a change in nature, only in amplitude.
-3. Fluency at the strategy–execution–technology interface. 
-I operate simultaneously in strategic thinking (Play to Win, GEO positioning) and operational execution. The role needs exactly that: the connective tissue between digital production teams and delivery.
-4. Proven Fixer DNA. 
-The post-merger integration - 100-day plan and end-of-year framework covering cultural alignment, portfolio consolidation and operational systems — is a direct case study for what team x needs: taking a structure in consolidation and giving it a backbone.
+SIMONA ILIE (ROMAŞCANU)
+simona.romascanu@gmail.com  ·  +40722 284 203  ·  linkedin.com/in/monaromascanu
 
+31 August 2026
 
+Natalia Szymanski
+Senior Talent Acquisition Specialist
+NN Group
 
-Over the past years I've built my experience in agency operations and cross-functional delivery, coordinating mixed teams around enterprise clients and retention and growth programmes. The area where I bring the most value is transforming operational complexity into clear systems: operating models, playbooks, capacity planning and prioritisation mechanisms that increase predictability and reduce bottlenecks. What draws me to this role is the builder component inside a regional hub: creating a scalable operating rhythm for 17 markets, with clear SOPs, quality gates and fluid collaboration between local, regional and global.
+Re: Head of Digital Marketing Centre of Excellence
 
+There is something unusual about this application: the organisation I am applying to is not a new name on my desk.
+For over five years, NN Romania has been one of the accounts I have been most closely involved with - shaping the SEO and content strategy from the very first engagement, building the project management structures and editorial frameworks, supervising delivery from article structure to relationship management, and leading the GEO and AI Visibility initiatives that are now part of NN’s organic marketing roadmap, including the international project launching this autumn.
+That familiarity - with your campaigns, your team dynamics, your brand restrictions, your feedback loops and your strategic priorities across markets - is not something I would need to build from scratch. It’s already there.
 
-I'm most at home where operations become the invisible infrastructure of excellence.
+Why this role
+The Digital Marketing Centre of Excellence is exactly the kind of structure I have been building throughout my career, not as a job title, but as an operating model. Over 20 years across agency strategy, digital marketing leadership and operations, my work has consistently centred on the same question: how do you take complex, fragmented capabilities and turn them into something scalable, measurable and genuinely useful to the people who rely on it?
+As part of the leadership team in Upswing, and - after the merger - in DWF, I lead strategy, workflow and methodology development across the group. Currently working on integrated digital strategy across the Centers of Excellence in Paid Media, Data Analytics, SEO, GEO and Social. 
+For more than five years as Head of Operations and Head of Content at Upswing, I built seven departments, trained and grew internal talent into newly shaped roles, created proprietary frameworks adopted across 80–100 clients and helped build a culture that relies on people centricity. The holistic strategy framework built on the Play to win model is unique in the industry, blending SEO, technical and strategic, with content relevance, brand building and solid business understanding. The Owned Asset Optimization strategic framework is another industry first. 
+On the GEO and AI Visibility front specifically: I authored Romania’s first proprietary GEO methodology, designed and ran the GEO Mastery Workshop and implementation programme for the full agency team, and have been supporting NN’s AI Visibility strategy across multiple project phases. This is not an area where I would need to catch up - it is one where I could move the Centre of Excellence forward quickly.
 
+What I bring to this role
+Beyond the NN account knowledge and the organic marketing and GEO expertise, what I believe I bring to this role is a particular way of leading: not through authority, but through frameworks, clarity and genuine investment in people’s growth. I have built multidisciplinary teams with high levels of autonomy, coached specialists to take ownership of cross-market programmes, and facilitated alignment between local business units and central strategic objectives - all without formal hierarchy as a crutch.
+I understand the complexity of working across international markets with different maturity levels, different team cultures and different expectations, because I worked across markets in KennoMedia for five years and then as a liaison for Warner Bros. and other big studios for a decade. I also understand the specific challenge of a Centre of Excellence: that its value is only as real as the adoption it drives in the business units it serves. 
+I am also deeply comfortable with implementing and adopting relevant martech stack and AI interface - designing agentic workflows, evaluating tool adoption at scale and integrating new technologies into operational rhythms in ways that create business value rather than just technical complexity.
 
-Why Mercedes-Benz / Why team x?
+In closing
+The combination of deep NN account familiarity, GEO and AI Visibility leadership, international programme experience and a proven track record of building capability from scratch makes this a role I am not just qualified for - but genuinely excited about.
+I would welcome the opportunity to discuss how my background aligns with what you are building inside the Centre of Excellence.
 
-What attracts me is the combination of operational complexity and the brand's standard of excellence. We're talking about an Experience Center serving 17 markets, multiple disciplines — CRM, content, data, UX — and precisely this level of cross-functional orchestration is where I can bring the greatest impact. What motivates me about team x specifically is the builder component: the opportunity to consolidate the operating model after its first year and create a system that allows creativity and technology to scale without friction.
+Warm regards,
+
+Simona Ilie (Romașcanu)
+simona.romascanu@gmail.com  ·  +40722 284 203
+
